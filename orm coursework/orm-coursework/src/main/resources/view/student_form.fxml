@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1305.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D24.controller.StudentFormController">
+<!--   <children>-->
+<!--      <TextField fx:id="txtStudentId" layoutX="46.0" layoutY="28.0" prefHeight="46.0" prefWidth="250.0" promptText="Student-Id" />-->
+<!--      <AnchorPane fx:id="ancorpaneTable" layoutY="332.0" prefHeight="387.0" prefWidth="1305.0">-->
+<!--         <children>-->
+<!--            <TableView fx:id="tblStudent" layoutX="40.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="1190.0">-->
+<!--               <columns>-->
+<!--                  <TableColumn fx:id="clmStudentId" prefWidth="148.0" text="STUDENT ID" />-->
+<!--                  <TableColumn fx:id="clmName" prefWidth="148.0" text="NAME" />-->
+<!--                  <TableColumn fx:id="clmAddress" prefWidth="148.0" text="ADDRESS" />-->
+<!--                  <TableColumn fx:id="clmContact" prefWidth="148.0" text="CONTACT NO" />-->
+<!--                  <TableColumn fx:id="clmDob" prefWidth="148.0" text="DOB" />-->
+<!--                  <TableColumn fx:id="clmGender" prefWidth="148.0" text="GENDER" />-->
+<!--                  <TableColumn fx:id="clmMoney" prefWidth="148.0" text="KEY MONEY" />-->
+<!--                  <TableColumn fx:id="clmMonthlyRent" prefWidth="148.0" text="MONTHLY RENT" />-->
+<!--               </columns>-->
+<!--            </TableView>-->
+<!--         </children></AnchorPane>-->
+<!--      <DatePicker fx:id="txtDob" layoutX="1037.0" layoutY="96.0" prefHeight="46.0" prefWidth="197.0" promptText="      DOB" />-->
+<!--      <TextField fx:id="txtStudentName" layoutX="666.0" layoutY="28.0" prefHeight="46.0" prefWidth="250.0" promptText="Student_Name" />-->
+<!--      <TextField fx:id="txtAddress" layoutX="978.0" layoutY="28.0" prefHeight="46.0" prefWidth="250.0" promptText="Address" />-->
+<!--      <TextField fx:id="txtContact" layoutX="46.0" layoutY="96.0" prefHeight="46.0" prefWidth="187.0" promptText="Contact" />-->
+<!--      <JFXComboBox fx:id="cmbGender" layoutX="808.0" layoutY="96.0" prefHeight="46.0" prefWidth="181.0" promptText="Gender" />-->
+<!--      <JFXButton layoutX="716.0" layoutY="171.0" onAction="#btnMakeReservationOnAction" prefHeight="46.0" prefWidth="166.0" style="-fx-background-radius: 10; -fx-background-color: #30A2FF;" text="RESERVE ROOM" />-->
+<!--      <JFXButton layoutX="1069.0" layoutY="171.0" onAction="#btnDeleteStudentOnAction" prefHeight="46.0" prefWidth="166.0" style="-fx-background-radius: 10; -fx-background-color: #30A2FF;" text="DELETE" />-->
+<!--      <JFXButton layoutX="892.0" layoutY="171.0" onAction="#btnUpdateStudentOnAction" prefHeight="46.0" prefWidth="166.0" style="-fx-background-radius: 10; -fx-background-color: #30A2FF;" text="UPDATE" />-->
+<!--      <JFXComboBox fx:id="cmbFilter" layoutX="785.0" layoutY="271.0" prefHeight="45.0" prefWidth="450.0" promptText="         Select" />-->
+<!--      <Label alignment="CENTER" layoutX="685.0" layoutY="273.0" prefHeight="45.0" prefWidth="100.0" style="-fx-border-color: black;" text="FILTER">-->
+<!--         <font>-->
+<!--            <Font name="System Bold" size="12.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <TextField layoutX="145.0" layoutY="268.0" onAction="#txtSearchStudentOnId" prefHeight="45.0" prefWidth="450.0" promptText="    Enter student Id here" />-->
+<!--      <Label alignment="CENTER" layoutX="45.0" layoutY="269.0" prefHeight="45.0" prefWidth="100.0" style="-fx-border-color: black;" text="SEARCH">-->
+<!--         <font>-->
+<!--            <Font name="System Bold" size="12.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <JFXButton layoutX="46.0" layoutY="171.0" onAction="#btnClearOnAction" prefHeight="46.0" prefWidth="166.0" style="-fx-background-radius: 10; -fx-background-color: #96B6C5;" text="CLEAR" textFill="#1e1d1d" />-->
+<!--      <TextField fx:id="txtReservationId" layoutX="355.0" layoutY="28.0" prefHeight="46.0" prefWidth="250.0" promptText="Reservation-Id" />-->
+<!--      <JFXComboBox fx:id="cmbRoomType" layoutX="549.0" layoutY="96.0" prefHeight="46.0" prefWidth="220.0" promptText="Room-Type" />-->
+<!--      <TextField fx:id="txtKeyMoneyAmount" layoutX="263.0" layoutY="96.0" prefHeight="46.0" prefWidth="250.0" promptText="Key-Money " />-->
+<!--   </children>-->
+</AnchorPane>

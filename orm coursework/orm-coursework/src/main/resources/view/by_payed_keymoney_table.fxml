@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1305.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D24.controller.PayedKeyMoneyTableController">
+   <children>
+      <AnchorPane fx:id="paymentDetailPane" layoutY="230.0" prefHeight="490.0" prefWidth="1305.0">
+         <children>
+            <TextField fx:id="txtSeach" layoutX="146.0" layoutY="19.0" onKeyTyped="#typesOnSearchBar" onMouseClicked="#clickedOnSearchBar" prefHeight="45.0" prefWidth="450.0" promptText="   enter student Id here" />
+            <JFXButton layoutX="48.0" layoutY="19.0" onAction="#btnSeacrByStudentIdOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #30A2FF;" text="SEACH" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="tblPaymentDetail" layoutX="50.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="1190.0">
+               <columns>
+                  <TableColumn fx:id="clmStudentId" minWidth="119.0" prefWidth="298.5" text="STUDENT ID" />
+                  <TableColumn fx:id="clmName" minWidth="119.0" prefWidth="298.5" text="NAME" />
+                  <TableColumn fx:id="clmRoomId" minWidth="119.0" prefWidth="298.5" text="ROOM ID" />
+                  <TableColumn fx:id="clmReservationId" minWidth="119.0" prefWidth="298.5" text="RESERVATION ID" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="686.0" layoutY="18.0" onAction="#btnFilterOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #30A2FF;" text="FILTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <ComboBox fx:id="cmbFilter" layoutX="785.0" layoutY="18.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="450.0" promptText="Select Filter Title" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="roomPane" prefHeight="720.0" prefWidth="1305.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D24.controller.RoomController">
+   <children>
+      <TextField fx:id="txtRoomId" layoutX="67.0" layoutY="48.0" prefHeight="50.0" prefWidth="280.0" promptText="Room Id" />
+      <JFXButton layoutX="295.0" layoutY="125.0" onAction="#btnAddRoomOnAction" prefHeight="45.0" prefWidth="120.0" style="-fx-background-radius: 10; -fx-background-color: #30A2FF;" text="ADD" />
+      <JFXButton layoutX="570.0" layoutY="125.0" onAction="#btnDeleteRoomAction" prefHeight="45.0" prefWidth="120.0" style="-fx-background-radius: 10; -fx-background-color: #30A2FF;" text="DELETE" />
+      <JFXButton layoutX="433.0" layoutY="125.0" onAction="#btnUpdateRoomOnAction" prefHeight="45.0" prefWidth="120.0" style="-fx-background-radius: 10; -fx-background-color: #30A2FF;" text="UPDATE" />
+      <TableView fx:id="tblRoomDetails" layoutX="67.0" layoutY="418.0" prefHeight="263.0" prefWidth="1190.0">
+         <columns>
+            <TableColumn fx:id="clmRoomId" prefWidth="397.0" text="ROOM ID" />
+            <TableColumn fx:id="clmRoomType" prefWidth="397.0" text="ROOM TYPE" />
+            <TableColumn fx:id="clmKeyMoney" prefWidth="397.0" text="KEY MONEY" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="cmbRoomType" layoutX="368.0" layoutY="48.0" prefHeight="50.0" prefWidth="280.0" promptText="Room Type" />
+      <TextField fx:id="txtKeyMoney" layoutX="662.0" layoutY="48.0" prefHeight="50.0" prefWidth="280.0" promptText="Key Money Amount" />
+      <Label layoutX="100.0" layoutY="312.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: lightblue;" text="A/C" />
+      <Label layoutX="100.0" layoutY="352.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: lightblue;" text="A/C FOOD" />
+      <Label fx:id="lblAcRoomCount" layoutX="302.0" layoutY="312.0" prefHeight="40.0" prefWidth="100.0" style="-fx-border-color: lightblue;" />
+      <Label fx:id="lblAcFoodCount" layoutX="302.0" layoutY="352.0" prefHeight="40.0" prefWidth="100.0" style="-fx-border-color: lightblue;" />
+      <Label layoutX="100.0" layoutY="232.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: lightblue;" text="NON A/C" />
+      <Label layoutX="100.0" layoutY="272.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: lightblue;" text="NON A/C FOOD" />
+      <Label fx:id="lblNonAcRoomCount" layoutX="302.0" layoutY="232.0" prefHeight="40.0" prefWidth="100.0" style="-fx-border-color: lightblue;" />
+      <Label fx:id="lblNonAcFoodRoomCount" layoutX="302.0" layoutY="272.0" prefHeight="40.0" prefWidth="100.0" style="-fx-border-color: lightblue;" />
+      <Label layoutX="570.0" layoutY="314.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: lightblue;" text="A/C" />
+      <Label layoutX="570.0" layoutY="354.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: lightblue;" text="A/C FOOD" />
+      <Label layoutX="570.0" layoutY="234.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: lightblue;" text="NON A/C" />
+      <Label layoutX="570.0" layoutY="274.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: lightblue;" text="NON A/C FOOD" />
+      <TextField fx:id="txtNonAcKeyMoney" layoutX="771.0" layoutY="234.0" prefHeight="40.0" prefWidth="100.0" />
+      <TextField fx:id="txtNonAcKeyMoneyFood" layoutX="771.0" layoutY="274.0" prefHeight="40.0" prefWidth="100.0" />
+      <TextField fx:id="txtAcKeyMoney" layoutX="771.0" layoutY="314.0" prefHeight="40.0" prefWidth="100.0" />
+      <TextField fx:id="txtAcKeyMoneyFood" layoutX="771.0" layoutY="355.0" prefHeight="40.0" prefWidth="100.0" />
+      <JFXButton layoutX="930.0" layoutY="289.0" onAction="#btnUpdateKeyMoneyOnAction" prefHeight="46.0" prefWidth="139.0" style="-fx-background-radius: 10; -fx-background-color: #30A2FF;" text="UPDATE KEY MONEY" />
+   </children>
+</AnchorPane>
